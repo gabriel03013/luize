@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+}
+
+.secao {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.secao{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.inicio {
+  text-align: center;
+  background-color: #ffffff;
+
+  h1 {
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+    color: #2e2e2e;
+  }
+
+  h2 {
+    font-size: 90px;
+    font-weight: 700;
+    color: #999999;
+  }
+
+  h2 span {
+    color: #e63946;
+  }
+
+  button {
+    background: transparent;
+    border: 0;
+    margin-top: 110px;
+    margin-left: -180px;
+    cursor: pointer;
+  }
+
+  button i {
+    color: #2e2e2e;
+    font-size: 80px;
+  }
+
+  button:hover i {
+    color: #2e2e2ecb;
+  }
+}
+
+.sobre-a-lu {
+  background-color: #2e2e2e;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  gap: 40px;
+  color: #f0ece1;
+  padding: 40px;
+}
+
+.sobre-a-lu article {
+  width: 45%;
+}
+
+.sobre-a-lu article h1 {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.sobre-a-lu article p {
+  line-height: 1.7em;
+  letter-spacing: 0.01em;
+}
+
+.sobre-a-lu div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.sobre-a-lu img {
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.final {
+  flex-direction: column;
+  background-color: #ffffff;
+  text-align: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+    color: #2e2e2e;
+  }
+
+  h2,
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #999999;
+    margin: 20px;
+  }
+
+  h4 {
+    font-size: 90px;
+    color: #e63946;
+  }
+}

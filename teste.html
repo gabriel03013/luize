@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Folha Sobrepondo</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .secao {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      z-index: 1;
+    }
+
+    .secao1 {
+      background-color: #8b0000;
+      z-index: 1;
+    }
+
+    .secao2 {
+      background-color: #111;
+      z-index: 1;
+    }
+
+    .secao3 {
+      background-color: #e63946;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="secao secao1">Feliz aniversário, meu amor!</section>
+  <section class="secao secao2">Eu te amo muito, Lu!</section>
+  <section class="secao secao3">Você é tudo pra mim.</section>
+
+</body>
+</html>
